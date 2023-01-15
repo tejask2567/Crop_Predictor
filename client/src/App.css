@@ -1,5 +1,300 @@
-.App {
-  text-align: center;
-  
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+body {
+  margin:0px;
+}
+.forms {
+  color: black;
+  width: 200px;
+  margin: 0 ;
+  height: auto;
+  vertical-align: middle;
+  text-align:center;
+  display: flex;
+  margin: 0 auto;
+  vertical-align: middle;
+  padding-left: 10px;
+  padding-top: 5px;
+  font-family:Verdana;
+  text-shadow: #fff;
+ 
 }
 
+.new {
+  width: 10px;
+  margin: 0 auto;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  letter-spacing: 4px;
+  padding-right: 12vw;
+  padding-top: 9vw;
+  font-family: Tahoma, sans-serif;
+  background-color: rgba(183, 141, 89, 0.5);;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-shadow: black;
+  stroke: black;
+}
+
+#trapezoid:hover .sub-home {
+  justify-content: center;
+  margin-top: 53px;
+}
+#trapezoid a, .subnavbtn {
+  /* -webkit-transform: rotateX(180deg);
+   transform: rotateX(180deg); */
+   align-items: center;
+ }
+ .navbar {
+  position: sticky;
+  top: 0;
+  display:flex;
+  overflow:hidden;
+  justify-content: center;
+  height:auto;
+  background-color: rgb(61, 61, 61);
+  margin: 0;
+  z-index: 2;
+}
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: right;
+  padding: 14px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: all 0.5s ease;
+
+}
+.navbar a:hover{
+  background:#8CA6DB;
+  color: black;
+  border-radius:5px;
+}
+.box1{
+  display: flex;
+  height: 100vh;
+  width:100%;
+  background-image: url(./assets/filed.jpg);
+  background-size:cover;
+  background-position: center;
+  font-family:Verdana, Tahoma, sans-serif;
+  display: table;
+}
+.title{
+  text-align:center;
+  display: table-cell;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+.title h1{
+
+  font-size: 60px;
+}
+title h3{
+  
+  font-style:italic
+}
+.box2{
+  display: flex;
+  height: 100vh;
+  width:100%;
+  background-image: url(./assets/image2.jpg);
+  background-size:cover;
+  background-position: center;
+  font-family:Verdana, Tahoma, sans-serif;
+  display: table;
+}
+.box3{
+  display: flex;
+  height: 100vh;
+  width:100%;
+  background-image: url(./assets/image3.jpg);
+  background-size:cover;
+  background-position: center;
+  font-family:Verdana, Tahoma, sans-serif;
+  display: table;
+}
+
+.drop-zone {
+  top:10vw;
+  left:37vw;
+  position:relative;
+	max-width: 350px;
+	height: 320px;
+	padding: 0px;
+	display:flexbox;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: "Quicksand", sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	color: #cccccc;
+	border: 4px  #009578;
+	border-radius: 10px;
+  background-color:rgba(183, 141, 89, 0.5);
+  z-index: 1;
+}
+.box4{
+  display: flex;
+  height: 100vh;
+  width:100%;
+  background-image: url(./assets/image4.jpg);
+  background-size:cover;
+  background-position: center;
+  font-family:Verdana, Tahoma, sans-serif;
+  display: table;
+}
+input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(3em + 2px);
+  margin: 0 0 1em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1.5em;
+  background: #fff;
+  resize: none;
+  outline: none;
+}
+input[type="text"][required]:focus {
+  border-color: #00bafa;
+}
+input[type="text"][required]:focus + label[placeholder]:before {
+  color: #00bafa;
+}
+input[type="text"][required]:focus + label[placeholder]:before,
+input[type="text"][required]:valid + label[placeholder]:before {
+  transition-duration: 0.2s;
+  transform: translate(0, -1.5em) scale(0.9, 0.9);
+}
+input[type="text"][required]:invalid + label[placeholder][alt]:before {
+  content: attr(alt);
+}
+input[type="text"][required] + label[placeholder] {
+  display: block;
+  pointer-events: none;
+  line-height: 1.25em;
+  margin-top: calc(-3em - 2px);
+  margin-bottom: calc((3em - 1em) + 2px);
+}
+input[type="text"][required] + label[placeholder]:before {
+  content: attr(placeholder);
+  display: inline-block;
+  margin: 0 calc(1em + 2px);
+  padding: 0 2px;
+  color: #898989;
+  white-space: nowrap;
+  transition: 0.3s ease-in-out;
+  background-image: linear-gradient(to bottom, #fff, #fff);
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color:rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: .8em;
+  display: inline-block;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  padding: 0.5em 2em;
+  border: 2px solid rgb(183, 141, 69);
+  transition: 0.02s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+  top:17.7em;
+  
+
+}
+.btn::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: rgb(183, 141, 69);
+  transition: 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1), left 0.3s cubic-bezier(0.1, 0, 0.1, 1);
+  z-index: -1;
+}
+.btn::after {
+  content: "";
+  display: inline-block;
+  background-image: url("https://cdn-icons-png.flaticon.com/128/109/109617.png");
+  position: absolute;
+  top: 0;
+  left: calc(100% - 3em);
+  right: 3em;
+  bottom: 0;
+  background-size: 1.5em;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: right 0.3s cubic-bezier(0.1, 0, 0.1, 1);
+}
+.btn:hover {
+  padding: 0.5em 3.5em 0.5em 0.5em;
+}
+.btn:hover::before {
+  left: calc(100% - 3em);
+  right: 0;
+  transition: 0.3s cubic-bezier(0.1, 0, 0.1, 1), left 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+}
+.btn:hover::after {
+  right: 0;
+  transition: right 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+}
+
+.pf-grid{
+  padding-top: 10em;
+  display: grid;
+  grid-template-rows: 350px;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  align-items: center;
+  vertical-align: middle;
+  gap: 80px;
+  
+}
+.pf1{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(140,196,229,.5);
+  border-radius: 10px;
+  padding: 1em;
+}
+.pf2{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(140,196,229,.5);
+  border-radius: 10px;
+  padding: 1em;
+}
+.pf3{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(140,196,229,.5);
+  border-radius: 10px;
+  padding: 1em;
+  
+}
+.img{
+  height: 90%;
+  width: 90%;
+  object-fit: cover;
+  align-items: center;
+  padding-left: 1.7em;
+  padding-top: 1em;
+}
+.Etext{
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-left: 5.5em;
+}
