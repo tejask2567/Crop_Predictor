@@ -97,7 +97,7 @@ function MyForm() {
             </label>
             <br/>
 
-            <button type='submit' className='btn'>Submit</button>
+            <button type='submit' className='btn' >Submit</button>
           </form>
             
           </div>
@@ -115,11 +115,11 @@ function MyForm() {
               <img className='img' src={Tejas } alt='Tejas'></img>
             </div>
             <div className='pf2'>
-            <div className='Etext'>E-mail: tek21aiml@cmrit.ac.in</div>
+            <div className='Etext'>E-mail: vare21aiml@cmrit.ac.in</div>
             <img className='img' src={amrita} alt='amrita'></img>
             </div>
             <div className='pf3'>
-            <div className='Etext'>E-mail: tek21aiml@cmrit.ac.in</div>
+            <div className='Etext'>E-mail: amsh21aiml@cmrit.ac.in</div>
             <img className='img' src={vanusha} alt='vanusha'></img>
             </div>
           </div>
@@ -128,7 +128,17 @@ function MyForm() {
       
       <div className='box4'>
         <section id='About'>
-          
+            <div className='bout'>
+              <p className='tbout'>
+                  This website uses Machine Learning model known as K-Nearest Neighbours to accurately predict the result in this case the type of crop to be used  
+              </p>
+              <p className='tbout'>
+                  The data-set used to predict the result is from kaggle.The data-set consists about 22 different types of crops with around 2000+ different enteries of those crops in the data-set.  
+              </p>
+              <p className='tbout'>
+                  The prediction is done by taking the values of temperature,Humidity and Rainfall.The main reason considering these as input is because these factors can easily be determined by the user
+                </p>
+            </div>
         </section>
       </div>
 

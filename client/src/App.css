@@ -298,3 +298,30 @@ input[type="text"][required] + label[placeholder]:before {
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding-left: 5.5em;
 }
+
+.bout{
+  top:5vw;
+  left:15vw;
+  position:relative;
+	max-width: 950px;
+	height: 500px;
+	padding: 0px;
+	display:flexbox;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: "Quicksand", sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	color: #cccccc;
+	border: 4px  #009578;
+	border-radius: 10px;
+  background-color:rgba(128, 209, 51, 0.5);
+  z-index: 1;
+}
+.tbout{
+  font-size: 30px;
+  
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:rgb(12, 11, 11);
+}
